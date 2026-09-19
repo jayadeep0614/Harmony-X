@@ -1,0 +1,57 @@
+======================================================================
+HARMONY-X EXPERIMENT SUMMARY
+======================================================================
+
+Dataset
+----------------------------------------------------------------------
+Total records: 8236
+Total columns: 23
+Missing values: 0
+Duplicate rows: 0
+
+Controlled Dataset
+----------------------------------------------------------------------
+Controlled records: 2578
+HAPPY records: 2041
+NEUTRAL records: 537
+
+ML Baseline
+----------------------------------------------------------------------
+Model: Random Forest
+Task: HAPPY vs NEUTRAL
+Accuracy: 94.19%
+Macro F1: 0.92
+Weighted F1: 0.94
+
+Confusion Matrix
+----------------------------------------------------------------------
+                Predicted
+              HAPPY  NEUTRAL
+Actual HAPPY    574      39
+Actual NEUTRAL    6     155
+
+Interpretation
+----------------------------------------------------------------------
+The Random Forest baseline learned a strong
+distinction between the controlled HAPPY and
+NEUTRAL conditions in the collected dataset.
+
+Important Limitation
+----------------------------------------------------------------------
+The evaluation used a stratified frame-level
+train/test split. Consecutive observations from
+the same recording may therefore be correlated.
+
+The 94.19% result should be reported as an
+initial controlled-dataset baseline rather than
+general real-world emotion-recognition accuracy.
+
+Future Experiment
+----------------------------------------------------------------------
+Collect multiple independent sessions for each
+controlled condition and perform session-level
+train/test evaluation.
+
+======================================================================
+END OF EXPERIMENT SUMMARY
+======================================================================

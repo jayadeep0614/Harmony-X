@@ -1,0 +1,41 @@
+project:
+  name: HARMONY-X
+  version: "0.1.0"
+  description: "Multimodal adaptive intelligence research platform"
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  models: "models"
+  experiments: "experiments"
+
+perception:
+  enabled: true
+  vision: true
+  face_detection: true
+  pose_detection: true
+  hand_tracking: true
+
+audio:
+  enabled: true
+  device: 9
+  sample_rate: 48000
+  channels: 2
+  duration: 1.0
+
+fusion:
+  enabled: true
+  method: "weighted"
+
+reasoning:
+  enabled: true
+  confidence_threshold: 0.70
+
+training:
+  seed: 42
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 10
+
+evaluation:
+  enabled: true
